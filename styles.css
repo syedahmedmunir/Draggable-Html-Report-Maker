@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+.hide{
+    display: none;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.drawing-container {
+    /* display: flex;
+    gap: 10px; */
+    margin-bottom: 20px;
+    border: 3px solid black;
+    padding: 2rem;;
+    margin-top:3rem;
+    border-radius: 10px;
+}
+
+.draggable_field {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: grab;
+    border-radius: 5px;
+    padding-left:3px;
+}
+
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: auto;
+    margin-bottom: 3rem;;
+}
+
+.attributes-toggle {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.attributes-container.show {
+    display: block;
+}
+
+.attributes-toggle {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.attributes-container {
+    display: none;
+    /* margin-top: 10px; */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.attributes-container.show {
+    display: block;
+}
+
+/* Add a blue border and adjust cursor for selected fields */
+.selected {
+    border: 2px solid blue;
+    cursor: grabbing;
+}
+
+.attributes-container {
+    cursor: auto;
+
+}
+label {
+    user-select: none;
+    width:100%;
+}
+
+
+#remove-container {
+    border: 2px dashed #ff0000;
+    background-color: #ffeeee;
+    padding: 5px;
+    text-align: center;
+    /* margin-top: 20px; */
+
+    width:100px;;
+}
+
+#remove-container p {
+    margin: 0;
+}
+
+/* Highlight the remove container when dragging over it */
+#remove-container.dragover {
+    background-color: #ffdddd;
+}
+
+.pull-right{
+    float: right;
+}
+
+
+*{
+    /* outline: 1px solid red; */
+}
+
